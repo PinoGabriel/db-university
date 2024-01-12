@@ -7,10 +7,9 @@ GROUP BY YEAR(enrolment_date);
 
 ESERCIZIO 2)
 
-SELECT COUNT(*)
+SELECT office_address, COUNT(*) AS insegnanti
 FROM teachers
-INNER JOIN departments
-ON departments.address = teacher.office_address
+GROUP BY office_address;
 
 
 ESERCIZIO 3)
